@@ -1,0 +1,121 @@
+.block
+{
+    width: 960px;
+    font-size: 0;
+    margin: 100px auto 0 auto;
+}
+
+.block-left
+{
+    width: 330px;
+    float: left;
+}
+
+.block-right
+{
+    width: 570px;
+    margin-left: 60px;
+    float: right;
+}
+
+.block-left__photo
+{
+    margin-bottom: 45px;
+}
+
+.block-left__title-list
+{
+    margin: 0 auto 14px auto;
+    font: 600 24px/1.3 'Open Sans';
+    color: #15a98c;
+}
+
+.block-left__list
+{
+   padding-left: 22px;
+}
+
+.block-left__list-item
+{
+    font: 19px/1.9 "Georgia";
+    color: #555555;
+}
+
+.block-left__list-item_first
+{
+    margin-left: -3px;
+}
+
+.block-left__title-list_format
+{
+   padding-top: 41px;
+   padding-left: 1px;
+}
+.quote
+{
+    margin-bottom: 142px;
+}
+
+.quote__text_paragraph
+{
+    background: url(../images/quotes.png) no-repeat 0 50px;
+    margin: 0;
+    padding: 119px 0 3px 60px;
+    font: italic 28px/1.5 "Georgia";
+    color: #848484;
+}
+
+.quote__text_author
+{
+    margin: 20px 5px auto 64px;
+    font: 600 16px/2.6 "Open Sans";
+    color: #333333;
+}
+
+.biography__title_top
+{
+    margin: 0 0 26px 0;
+    padding: 1px 0 50px 5px;
+    background: url(../images/rectangle.png) no-repeat 0 78px;
+    font: 700 48px/1.1 "Open Sans";
+    color: #333333;
+}
+
+.biography__title_bottom
+{
+    margin: 43px auto 17px -2px;
+    font: 400 36px/1.1 'Open Sans';
+    color: #333333;
+}
+
+.biography__text
+{
+    margin: 0;
+    font: 19px/1.7 "Georgia";
+    color: #555555;
+    margin-bottom: 39px;
+    padding-left: 1px;
+}
+
+.block-right__link
+{
+    color: #15a98b;
+    text-decoration: none;
+    font: 19px/36px "Georgia";
+}
+
+.block-right__link:hover
+{
+    color: #098d72;
+}
+
+.block-right__link-border
+{
+    border-bottom: 1px solid #15a98b;
+}
+
+
+.block-right__link-border:hover
+{
+    border-color: #098d72;
+}
