@@ -75,10 +75,20 @@
 .biography__title_top
 {
     margin: 0 0 26px 0;
-    padding: 1px 0 50px 5px;
-    background: url(../images/rectangle.png) no-repeat 0 78px;
+    padding: 1px 0 18px 5px;
     font: 700 48px/1.1 "Open Sans";
     color: #333333;
+}
+
+.biography__title_top::after
+{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 6px;
+    border-radius: 5px;
+    background: #15a98b;
+    margin: 26px 0 0 -5px;
 }
 
 .biography__title_bottom
@@ -113,7 +123,6 @@
 {
     border-bottom: 1px solid #15a98b;
 }
-
 
 .block-right__link-border:hover
 {
