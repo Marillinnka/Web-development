@@ -40,32 +40,24 @@
 .block-left__list-item
 {
     font: 19px/1.9 "Georgia";
-    color: #555555;
-}
-
-.block-left__list-item_first
-{
-    margin-left: -3px;
+    color: #555;
 }
 
 .block-left__title-list_format
 {
-   padding-top: 41px;
-   padding-left: 1px;
+   padding: 41px 0 0 1px;
 }
 
 .quote
 {
-    margin-bottom: 77px;
-    margin-top: 135px;
-    margin-left: 3px;
+    margin: 135px 0 77px 3px;
 }
 
 .quote__text_paragraph
 {
     margin: 0;
     font: italic 28px/1.5 "Georgia";
-    color: #ffffff;
+    color: #fff;
 }
 
 .quote__text_author
@@ -80,7 +72,7 @@
     padding-left: 5px;
     margin-bottom: 44px;
     font: 700 48px/1.1 "Open Sans";
-    color: #333333;
+    color: #333;
 }
 
 .biography__title_top::after
@@ -96,18 +88,17 @@
 
 .biography__title_bottom
 {
-    margin: 43px auto 17px -2px;
+    margin: 43px auto 17px 0;
     font: 400 36px/1.1 'Open Sans';
-    color: #333333;
+    color: #333;
 }
 
 .biography__text
 {
-    margin: 0;
     font: 19px/1.7 "Georgia";
-    color: #555555;
-    margin-bottom: 39px;
+    color: #555;
     padding-left: 1px;
+    margin: 10px 0 38px 0;
 }
 
 .block-right__link
@@ -137,13 +128,13 @@
     margin: 0;
     background-image: url(../images/sea.png);
     background-repeat: no-repeat;
-    background-position: -285px 50px;
+    background-position: -288px 50px;
 }
 
 .block-top
 {
     height: 50px;
-    background-color: #ffffff;
+    background-color: #fff;
     width: auto;
     display: flex;
     justify-content: center;
@@ -157,7 +148,7 @@
 .menu__text
 {
     font: 19px/0.63 "Georgia";
-    color: #333333;
+    color: #333;
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -220,7 +211,7 @@
     color: #333333;
     font-weight: 400;
     font-family: "Open Sans";
-    margin-bottom: 34px;
+    margin: 32px 0 34px 0;
 }
 
 .block-bottom__films-cards
@@ -241,8 +232,7 @@
     color: #333333;
     font-weight: 700;
     font-family: "Open Sans";
-    margin-top: 20px;
-    margin-bottom: 12px;
+    margin: 18px 0 12px 0;
 }
 
 .block-bottom__films-cards-text
@@ -255,8 +245,7 @@
 
 .block-bottom__button
 {
-    margin-top: 38px;
-    margin-bottom: 60px;
+    margin: 38px 0 60px 0;
     display: flex;
     justify-content: center;
 }
@@ -310,7 +299,7 @@
 {
     font-size: 36px;
     line-height: 42px;
-    color: #333333;
+    color: #333;
     font-weight: 300;
     font-family: "Open Sans";
     text-align: center;
@@ -338,18 +327,17 @@
 .block-form__form-country
 {
     height: 50px;
-    padding: 0 15px;
+    padding: 0 12px 2px;
     border: 2px solid #c9c9c9;
     border-radius: 3px;
-    margin-bottom: 40px;
-    margin-top: 3px;
+    margin: 3px 0 40px 0;
 }
 
 .block-form__form-title-country
 {
     font-size: 18px;
     line-height: 32px;
-    color: #555555;
+    color: #555;
     font-weight: 400;
     font-family: "Open Sans";
 }
@@ -419,18 +407,17 @@
 {
     font-size: 18px;
     line-height: 32px;
-    color: #333333;
+    color: #333;
     font-weight: 400;
     font-family: "Open Sans";
-    margin-left: 5px;
-    margin-right: 35px;
+    margin: 0 35px 0 5px;
 }
 
 .block-form__form-title
 {
     font-size: 20px;
     line-height: 32px;
-    color: #333333;
+    color: #333;
     font-weight: 400;
     font-family: "Open Sans";
     margin-bottom: 3px;
@@ -456,9 +443,7 @@
 {
     font-size: 16px;
     line-height: 32px;
-    color: #555555;
+    color: #555;
     font-family: "Georgia";
-    text-align: center;
-    margin-top: 13px;
-    margin-right: 24px;
+    margin: 13px 22px 18px 0;
 }
