@@ -190,37 +190,6 @@
     margin-bottom: 45px;
 }
 
-.block-bottom__films
-{
-    max-width: 100%;
-    overflow:hidden;
-}
-
-.block-bottom__films-photo
-{
-    max-width: 100%;
-    height: 200px;
-    border-radius: 5px;
-}
-
-.block-bottom__button-arrow
-{
-    font-size: 35px;
-    line-height: 33px;
-    color: #f5f5f5;
-    font-weight: 350;
-    font-family: 'Open Sans';
-    border-radius: 50%;
-    border-inline: none;
-    background-color: #15a98b;
-}
-
-.block-bottom__button-arrow:hover
-{
-    background-color: #098d72;
-    cursor: pointer;
-}
-
 .block-bottom__title
 {
     font-size: 36px;
@@ -229,31 +198,87 @@
     font-weight: 400;
     font-family: 'Open Sans';
     margin: 32px 0 34px 0;
-    text-align: center;
+    padding-right: 870px;
 }
 
-.block-bottom__films-cards-format
+.block-bottom__slider
 {
-    max-width: 100%;
-    margin: 0 30px;
+    display: flex;
+    width: 100%;
+    clear: both;
+    justify-content: space-around;
 }
 
-.block-bottom__films-cards-title
+.block-bottom__slider-box
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+.block-bottom__slider-cards
+{
+    display: flex;
+}
+
+.card
+{
+    padding: 0 11px;
+    width: 25%;
+}
+
+.card-photo
+{
+    height: 190px;
+    border-radius: 8px;
+    width: 281px;
+}
+
+.card-title
 {
     font-size: 22px;
     line-height: 32px;
     color: #333;
     font-weight: 700;
     font-family: 'Open Sans';
-    margin: 18px 0 12px 0;
 }
 
-.block-bottom__films-cards-text
+.card-text
 {
     font-size: 16px;
     line-height: 28px;
     color: #555;
     font-family: 'Georgia';
+}
+
+.block-bottom__left-button
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: rgb(167, 52, 52);
+    margin-top: 60px;
+    border: none;
+    outline: none;
+    background-color: #15a98b;
+}
+
+.block-bottom__right-button
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: rgb(167, 52, 52);
+    margin-top: 60px;
+    border: none;
+    outline: none;
+    background-color: #15a98b;
+}
+
+.block-bottom__right-button,
+.block-bottom__left-button:hover
+{
+    cursor: pointer;
+    background-color: #098d72;
 }
 
 .block-bottom__button
@@ -579,22 +604,24 @@
         margin: 32px 90px 34px;
     }
 
-    .block-bottom__films
-    {
-        max-width: 90%;
-    }
-
-    .block-bottom__films-cards
+    .slider
     {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        width: 100%;
+        clear: both;
+        justify-content: center;
+        max-width: 1360px;
     }
 
-    .block-bottom__films-cards-format
+    .slider__box
     {
-        max-width: 40%;
-        margin-bottom: 20px;
+        overflow: hidden;
+        width: 81%;
+    }
+
+    .item
+    {
+        min-width: 31.2%;
     }
 
     .block-form__title-format
@@ -678,6 +705,26 @@
     .block-form__form
     {
         width: 40%;
+    }
+
+    .slider
+    {
+        display: flex;
+        width: 100%;
+        clear: both;
+        justify-content: center;
+        max-width: 1360px;
+    }
+
+    .slider__box
+    {
+        overflow: hidden;
+        width: 81%;
+    }
+
+    .item
+    {
+        min-width: 23.2%;
     }
 }
 
@@ -787,6 +834,12 @@
 
 @media screen and (min-width: 1800px)
 {
+    .block-bottom__slider-box
+    {
+        overflow: hidden;
+        width: 63%;
+    }
+
     .biography
     {
         max-width: 40%;
@@ -891,188 +944,3 @@
         background-size: 100%;
     }
 }
-
-
-/*.navbar
-{
-    display: flex;
-    justify-content: center;
-    background-color: #15a98b;
-}
-
-.navbar-link
-{
-    text-decoration: none;
-    margin-right: 50px;
-    font-size: 25px;
-    line-height: 42px;
-    color: #f5f5f5;
-    font-weight: 300;
-    font-family: 'Open Sans';
-    text-align: center;
-}
-
-.navbar-link:hover
-{
-    background-color: #66CDAA;
-    cursor: pointer;
-}
-
-.block-form__title-format
-{
-    font-size: 25px;
-    line-height: 42px;
-    color: #333;
-    font-weight: 300;
-    font-family: 'Open Sans';
-    text-align: center;
-    display: inline-flex;
-    margin: 0 25px;
-}
-
-.block-form__form
-{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding: 69px 0 0 400px;
-}
-
-.block-form__form-item
-{
-    padding: 0 18px;
-    height: 46px;
-    border: 2px solid #c9c9c9;
-    border-radius: 3px;
-    margin-bottom: 23px;
-}
-
-.block-form__form-country
-{
-    height: 50px;
-    padding: 0 12px 2px;
-    border: 2px solid #c9c9c9;
-    border-radius: 3px;
-    margin: 3px 0 40px 0;
-}
-
-.block-form__form-title-country
-{
-    font-size: 18px;
-    line-height: 32px;
-    color: #555;
-    font-weight: 400;
-    font-family: 'Open Sans';
-}
-
-.block-form__form-you-message
-{
-    width: auto;
-    padding: 0 20px;
-    height: 145px;
-    border: 2px solid #c9c9c9;
-    resize: none;
-    border-radius: 3px;
-    margin-bottom: 51px;
-}
-
-.block-form__button
-{
-    width: 220px;
-    height: 50px;
-    background-color: #15a98b;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-.block-form__button:hover
-{
-    background-color: #098d72;
-    cursor: pointer;
-}
-
-.block-form__form-title-button
-{
-    font-size: 19px;
-    line-height: 32px;
-    color: #f5f5f5;
-    font-family: 'Georgia';
-}
-
-.block-form__form-item:hover,
-.block-form__form-country:hover,
-.block-form__form-you-message:hover
-{
-    border: 2px solid #a6a6a6;
-}
-
-.block-form__form-item:focus,
-.block-form__form-country:focus,
-.block-form__form-you-message:focus
-{
-    border: 2px solid #15a98c;
-    outline: none;
-}
-
-.block-form__form-radio
-{
-    display: flex;
-    margin: 2px 0 36px 0;
-}
-
-.block-form__form-radio-title
-{
-    font-size: 18px;
-    line-height: 32px;
-    color: #333;
-    font-weight: 400;
-    font-family: 'Open Sans';
-    margin: 0 35px 0 5px;
-}
-
-.block-form__form-title
-{
-    font-size: 20px;
-    line-height: 32px;
-    color: #333;
-    font-weight: 400;
-    font-family: 'Open Sans';
-    margin-bottom: 3px;
-}
-
-.block-form__radio
-{
-    margin: 10px 0 0 0;
-}
-
-.block-form__form-star:after
-{
-    content: ' *';
-    color: red;
-}
-
-.notification
-{
-    font-size: 20px;
-    line-height: 32px;
-    color: #333;
-    font-weight: 400;
-    font-family: 'Open Sans';
-    background-color: #e0e38a;
-    background-size: 50px;
-}
-
-.email-error,
-.text-messege-error,
-.first-name-error
-{
-    font-size: 15px;
-    line-height: 32px;
-    color: #333;
-    font-weight: 400;
-    font-family: 'Open Sans';
-    margin: 0 0 20px 0;
-    background-color: #ffe099;
-}
-*/

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../web/css/style.css">
+    <script src="../../web/js/carousel.js" defer></script>
   </head>
   <body class="body-format">
     <div class="menu">
@@ -87,14 +88,17 @@
       </div>
     </div>
     <div class="block-bottom">
-      <div class="block-bottom__films">
-        <h2 class="block-bottom__title">Любимые фильмы</h2>
-        <button id="right" class="block-bottom__button-arrow"><</button>
-        <div class="block-bottom__films-cards">
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/movie_one.jpg" alt="Фото из фильма Побег из Шоушенка">
-            <h3 class="block-bottom__films-cards-title">Побег из Шоушенка</h3>
-            <p class="block-bottom__films-cards-text">
+      <h2 class="block-bottom__title">Любимые фильмы</h2>
+    <div class="block-bottom__slider">
+      <button class="block-bottom__left-button" id="left">
+        <img  src="images/arrow_left.png" alt="Фотография левой стрелки">
+      </button>
+      <div class="block-bottom__slider-box">
+        <div class="block-bottom__slider-cards">
+          <div class="card">
+            <img class="card-photo" src="images/movie_one.jpg" alt="Фото из фильма Побег из Шоушенка">
+            <h3 class="card-title">Побег из Шоушенка</h3>
+            <p class="card-text">
               Успешный банкир Энди Дюфрейн обвинен в убийстве собственной
               жены и ее любовника. Оказавшись в тюрьме под названием
               Шоушенк, он сталкивается с жестокостью и беззаконием,
@@ -105,10 +109,10 @@
               дерзкий план своего освобождения.
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/movie_two.jpg" alt="Фото из фильма Наркоз">
-            <h3 class="block-bottom__films-cards-title">Наркоз</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/movie_two.jpg" alt="Фото из фильма Наркоз">
+            <h3 class="card-title">Наркоз</h3>
+            <p class="card-text">
               Клай Бересфорд вынужден лечь под нож. Однако в процессе
               операции на сердце он неожиданно приходит в себя. Находясь
               в парализованном состоянии, будучи не в силах пошевелить
@@ -116,10 +120,10 @@
               касание скальпеля к своей плоти…
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/movie_three.jpg" alt="Фото из фильма Астрал">
-            <h3 class="block-bottom__films-cards-title">Астрал</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/movie_three.jpg" alt="Фото из фильма Астрал">
+            <h3 class="card-title">Астрал</h3>
+            <p class="card-text">
               Джош и Рене переезжают со своими детьми в новый дом,
               но не успевают толком распаковать вещи, как начинаются
               странные события. Необъяснимо перемещаются предметы, в
@@ -129,10 +133,10 @@
               мальчику безуспешны.
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/movie_four.jpg" alt="Фото из фильма Гравитация">
-            <h3 class="block-bottom__films-cards-title">Гравитация</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/movie_four.jpg" alt="Фото из фильма Гравитация">
+            <h3 class="card-title">Гравитация</h3>
+            <p class="card-text">
               Доктор Райан Стоун, блестящий специалист в области
               медицинского инжиниринга, отправляется в свою первую
               космическую миссию под командованием ветерана астронавтики
@@ -145,10 +149,10 @@
               без всякой связи с Землей и какой-либо надежды на спасение.
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/hungry_games.jpg" alt="Фото из фильма Голодные игры">
-            <h3 class="block-bottom__films-cards-title">Голодные игры</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/hungry_games.jpg" alt="Фото из фильма Голодные игры">
+            <h3 class="card-title">Голодные игры</h3>
+            <p class="card-text">
               Каждый год Капитолий проводит жестокие игры, чтоб Дистрикты не
               забывали о том, кто в мире главный.Традиция стравливать друг с
               другом представителей районов страны со временем превратилась в
@@ -156,10 +160,10 @@
               Дистрикт выпадает Китнесс Эвердин, и это изменит мир.
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/gifted.jpg" alt="Фото из фильма Одарённая">
-            <h3 class="block-bottom__films-cards-title">Одарённая</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/gifted.jpg" alt="Фото из фильма Одарённая">
+            <h3 class="card-title">Одарённая</h3>
+            <p class="card-text">
               Фрэнк Адлер живет в прибрежном городке во Флориде и воспитывает в
               одиночку свою необычайно одаренную племянницу Мэри. Но планы парня
               о спокойной школьной жизни для девочки рушатся, когда о
@@ -168,20 +172,20 @@
               она готова даже разлучить Мэри с Фрэнком.
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/it.jpg" alt="Фото из фильма Оно">
-            <h3 class="block-bottom__films-cards-title">Оно</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/it.jpg" alt="Фото из фильма Оно">
+            <h3 class="card-title">Оно</h3>
+            <p class="card-text">
               Когда в городке Дерри штата Мэн начинают пропадать дети, несколько
               ребят сталкиваются со своими величайшими страхами - не только с
               группой школьных хулиганов, но со злобным клоуном Пеннивайзом, чьи
               проявления жестокости и список жертв уходят в глубь веков.
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/ater.jpg" alt="Фото из фильма После">
-            <h3 class="block-bottom__films-cards-title">После</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/ater.jpg" alt="Фото из фильма После">
+            <h3 class="card-title">После</h3>
+            <p class="card-text">
               Случайная встреча перевернула их привычный мир. Она – прилежная
               студентка и образцовая дочь, а он – притягательный бунтарь с
               непростым прошлым. Живя в параллельных вселенных, они бы вряд ли
@@ -189,10 +193,10 @@
               разделить жизнь влюбленных на до и после.
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/midnight_sun.jpg" alt="Фото из фильма Полночное солнце">
-            <h3 class="block-bottom__films-cards-title">Полночное солнце</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/midnight_sun.jpg" alt="Фото из фильма Полночное солнце">
+            <h3 class="card-title">Полночное солнце</h3>
+            <p class="card-text">
               Ночами 17-летняя Кэти сочиняет красивые песни под гитару, а днем
               она вынуждена скрываться во мраке: её нежная кожа не выносит
               солнечного света. Но однажды в полночь Кэти знакомится с Чарли,
@@ -201,10 +205,10 @@
               возлюбленного она готова сгореть в лучах света безумного чувства.
             </p>
           </div>
-          <div class="block-bottom__films-cards-format">
-            <img class="block-bottom__films-photo" src="images/hachi.jpg" alt="Фото из фильма Хатико">
-            <h3 class="block-bottom__films-cards-title">Хатико</h3>
-            <p class="block-bottom__films-cards-text">
+          <div class="card">
+            <img class="card-photo" src="images/hachi.jpg" alt="Фото из фильма Хатико">
+            <h3 class="card-title">Хатико</h3>
+            <p class="card-text">
               В основе сюжета - реальная история, случившаяся в Японии и
               потрясшая весь мир. Однажды, возвращаясь с работы, профессор
               колледжа нашел на вокзале симпатичного щенка породы акита-ину.
@@ -214,29 +218,15 @@
             </p>
           </div>
         </div>
-        <button id="left" class="block-bottom__button-arrow">></button>
-        <div class="block-bottom__button">
-          <button class="block-bottom__button-all-films">Все фильмы</button>
-        </div>
       </div>
+      <button class="block-bottom__right-button" id="right">
+        <img  src="images/arrow_right.png" alt="Фотография правой стрелки">
+      </button>
     </div>
-
-    <script>
-      document.getElementById('left').onclick = function(){
-        let items = document.querySelector('.slider__items');
-        let firstItem = items.firstElementChild;
-        let lastItem = items.lastElementChild;
-        items.insertBefore(lastItem, firstItem);
-      }
-
-      document.getElementById('right').onclick = function(){
-        let items = document.querySelector('.slider__items');
-        let firstItem = items.firstElementChild;
-        items.insertBefore(firstItem);
-      }
-
-    </script>
-
+    <div class="block-bottom__button">
+      <button class="block-bottom__button-all-films">Все фильмы</button>
+    </div>
+  </div>
     <div class="form-block">
       <form method="post" class="block-form__form">
       <?php if (isset($args['notification'])): ?>
