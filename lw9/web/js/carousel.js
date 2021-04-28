@@ -9,14 +9,14 @@ function rightwards() {
       items.insertBefore(lastItem, firstItem);
     }
 }
-function leftwards(){
+function leftwards() {
     document.querySelector('#right').onclick = function () {
       let items = document.querySelector('.block-bottom__slider-cards');
       let firstItem = items.firstElementChild;
       items.append(firstItem);
     }
 }
-function carousel(){
+function carousel() {
     rightwards();
     leftwards();
 }
