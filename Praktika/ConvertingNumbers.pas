@@ -5,9 +5,9 @@ VAR
 BEGIN {ConvertingNumbers}
   S := 0;
   Rez := 1;
-  WRITE('¬ведите натуральное число n: ');
+  WRITE('Enter a natural number n: ');
   READ(N);
-  WRITE('¬ведите число k: ');
+  WRITE('Enter a number k: ');
   READ(K);
   IF ((N >= 1) AND (N <= 109)) AND ((K >= 2) AND (K <= 10))
   THEN
@@ -27,8 +27,8 @@ BEGIN {ConvertingNumbers}
       FOR I := 1 TO S
       DO
         Rez := Rez - A[I];
-      WRITELN('ќтвет:', Rez)
+      WRITELN('Answer:', Rez)
     END
   ELSE
-    WRITELN('¬ведЄнные числа не соответствуют условию задачи. ¬ведите корректные значени€.')
+    WRITELN('The entered numbers do not match the task condition. Enter the correct values.')
 END. {ConvertingNumbers}
